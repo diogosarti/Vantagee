@@ -1,7 +1,7 @@
-package com.osguri.techskills.services;
+package com.osguri.vantage.services;
 
-import com.osguri.techskills.entities.Curso;
-import com.osguri.techskills.repositories.CursoRepository;
+import com.osguri.vantage.entities.Curso;
+import com.osguri.vantage.repositories.CursoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.ModelAndView;

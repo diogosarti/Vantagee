@@ -1,4 +1,4 @@
-package com.osguri.techskills.entities;
+package com.osguri.vantage.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

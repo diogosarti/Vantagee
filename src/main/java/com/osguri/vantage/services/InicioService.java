@@ -1,4 +1,4 @@
-package com.osguri.techskills.services;
+package com.osguri.vantage.services;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.ModelAndView;

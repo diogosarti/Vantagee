@@ -1,6 +1,6 @@
-package com.osguri.techskills.resources;
+package com.osguri.vantage.resources;
 
-import com.osguri.techskills.services.CursoService;
+import com.osguri.vantage.services.InicioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,15 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/cursos")
-public class CursoResource {
+@RequestMapping(value = "/")
+public class InicioResource {
 
     @Autowired
-    private CursoService service;
+    private InicioService service;
 
     @GetMapping
-    public ModelAndView findAll(){
-        return service.getCursos();
+    public ModelAndView inicio(){
+        return service.getIndex();
     }
-
 }

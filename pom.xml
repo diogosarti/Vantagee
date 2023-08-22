@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.osguri</groupId>
-	<artifactId>techskills</artifactId>
+	<artifactId>vantage</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>techskills</name>
-	<description>techskills</description>
+	<name>vantage</name>
+	<description>vantage</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

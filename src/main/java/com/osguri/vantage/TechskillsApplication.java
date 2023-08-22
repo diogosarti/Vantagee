@@ -1,4 +1,4 @@
-package com.osguri.techskills;
+package com.osguri.vantage;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,6 +1,6 @@
-package com.osguri.techskills.repositories;
+package com.osguri.vantage.repositories;
 
-import com.osguri.techskills.entities.Aluno;
+import com.osguri.vantage.entities.Aluno;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
