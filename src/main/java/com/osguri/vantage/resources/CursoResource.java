@@ -1,23 +1,22 @@
-package com.osguri.techskills.resources;
+package com.osguri.vantage.resources;
 
-import com.osguri.techskills.services.InicioService;
-import jakarta.servlet.http.HttpServletRequest;
+import com.osguri.vantage.services.CursoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping(value = "/")
-public class InicioResource {
+@RequestMapping("/cursos")
+public class CursoResource {
 
     @Autowired
-    private InicioService service;
+    private CursoService service;
 
     @GetMapping
-    public ModelAndView inicio(){
-        return service.getIndex();
+    public ModelAndView findAll(){
+        return service.getCursos();
     }
+
 }

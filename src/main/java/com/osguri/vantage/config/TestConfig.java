@@ -1,7 +1,7 @@
-package com.osguri.techskills.config;
+package com.osguri.vantage.config;
 
-import com.osguri.techskills.entities.Curso;
-import com.osguri.techskills.repositories.CursoRepository;
+import com.osguri.vantage.entities.Curso;
+import com.osguri.vantage.repositories.CursoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
