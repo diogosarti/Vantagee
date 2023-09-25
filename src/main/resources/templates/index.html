@@ -13,6 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
 
+
+    <link
+            rel="stylesheet"
+            th:href="@{/css/animatecss.css}"
+    />
     <style>
         #typed-subtext::after{
             content: "|";
@@ -37,9 +42,9 @@
 
     </style>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script th:src="@{/css/tailwind.css}"></script>
 
-<!--    <script src="https://kit.fontawesome.com/63a703aaf9.js" crossorigin="anonymous"></script>-->
+    <script src="https://kit.fontawesome.com/63a703aaf9.js" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -56,7 +61,10 @@
                         <a class="hover:text-gray-500" href="#">Início</a>
                     </li>
                     <li>
-                        <a class="hover:text-gray-500" href="#">Cursos</a>
+                        <a class="hover:text-gray-500" href="/cursos">Cursos</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Blog</a>
                     </li>
                     <li>
                         <a class="hover:text-gray-500" href="#">Sobre</a>
@@ -122,7 +130,84 @@
         </div>
     </section>
 
+    <section id="categories" class="my-12 bg-[#011F26]">
+        <div class="container pt-5 pb-20 mx-auto">
+            <h1 class="flex justify-center font-medium my-5 text-white text-3xl font-bold leading-none tracking-tighter">Em alta</h1>
 
+            <div class=" transition-all flex flex-row justify-center gap-2 items-center text-center flex-wrap pl-4 md:pl-0">
+                <div class="elemento hidden transition-all basis-[45%] md:basis-[10.93%] bg-[#f2f2f2] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2 animate__animated">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125 flex justify-center items-center">
+                        <i class="fa-brands text-purple-600 fa-bootstrap w-16 h-16"></i>
+                    </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        Bootstrap
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        2 Cursos
+                    </p>
+                </div> <!-- End Single Category Item -->
+                <div class="elemento hidden transition-all basis-[45%] md:basis-[10.93%] bg-[#f2f2f2] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2 animate__animated ">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125 flex justify-center items-center">
+                        <i class="fa-brands text-orange-500 fa-html5 w-16 h-16"></i>
+                    </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        HTML5
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        3 Cursos
+                    </p>
+                </div> <!-- End Single Category Item -->
+                <div class="elemento hidden transition-all basis-[45%] md:basis-[10.93%] bg-[#f2f2f2] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2 animate__animated ">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125 flex justify-center items-center">
+                        <i class="fa-brands fa-java w-16 h-16"></i>
+                    </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        Java
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        5 Cursos
+                    </p>
+                </div> <!-- End Single Category Item -->
+                <div class="elemento hidden transition-all basis-[45%] md:basis-[10.93%] bg-[#f2f2f2] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2 animate__animated ">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125 flex justify-center items-center">
+                        <i class="fa-brands text-blue-400 fa-react w-16 h-16"></i>
+                    </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        React
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        7 Cursos
+                    </p>
+                </div> <!-- End Single Category Item -->
+                <div class="elemento hidden transition-all basis-[45%] md:basis-[10.93%] bg-[#f2f2f2] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2 animate__animated ">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125 flex justify-center items-center">
+                        <i class="fa-brands fa-node-js text-green-500 w-16 h-16"></i>
+                    </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        Node.js
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        2 Cursos
+                    </p>
+                </div> <!-- End Single Category Item -->
+                <div class="elemento hidden transition-all basis-[45%] md:basis-[10.93%] bg-[#f2f2f2] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2 animate__animated ">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125 flex justify-center items-center">
+                        <i class="fa-brands fa-laravel text-orange-600 w-16 h-16"></i>
+                    </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        Laravel
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        2 Cursos
+                    </p>
+                </div> <!-- End Single Category Item -->
+            </div>
+        </div>
+    </section>
+
+    <section class="cursos">
+
+    </section>
 
     <script th:src="@{/js/jquery.js}"></script>
 
@@ -163,7 +248,23 @@
         }
 
         typeWriter(); // Inicializa a função
+
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                $('.elemento').each(function() {
+                    var elementoPosicao = $(this).offset().top;
+                    var windowHeight = $(window).height();
+                    var scrollPosicao = $(window).scrollTop();
+
+                    if (scrollPosicao > elementoPosicao - windowHeight + 200) {
+                        $(this).removeClass('hidden');
+                        $(this).addClass('animate__fadeInUp block');
+                    }
+                });
+            });
+        });
     </script>
 
+    <script th:src="@{/js/main.js}"></script>
 </body>
 </html>
